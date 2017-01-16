@@ -21,7 +21,8 @@ try {
             'id' => 1
         )
     );
-
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+    }
 } catch (PDOException $e) {
     echo "error " . $e->getMessage() . "<br>";
 }
